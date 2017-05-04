@@ -31,12 +31,11 @@ $(document).ready(function(){
     if($("#leadinCarousel").length){
         $("#leadinCarousel").carousel({interval: false});
 
-        $("#leadinCarousel").swipe({
-            swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
-                if (direction == 'left') $(this).carousel('next');
-                if (direction == 'right') $(this).carousel('prev');
-            },
-            allowPageScroll:"vertical"
+        $("#leadinCarousel").swipeleft(function() {
+            $(this).carousel('next');
+        });
+        $("#leadinCarousel").swiperight(function() {
+            $(this).carousel('prev');
         });
     }
         
