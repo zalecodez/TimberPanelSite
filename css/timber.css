@@ -264,7 +264,6 @@ img{
 
 
 .lead-in-content_section{
-    padding:20px;
 }
 
 #leadinCarousel .carousel-inner{
@@ -283,7 +282,6 @@ img{
     vertical-align:top
 }
 #leadinCarousel .getstarted_button{
-    bottom:0;
     margin-bottom:4px;
     padding: 9px 4px;
     text-decoration:none;
