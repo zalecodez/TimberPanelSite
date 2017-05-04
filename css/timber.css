@@ -478,6 +478,11 @@ h5.message_label{
 }
 
 @media (max-width: 991px) {
+    .navbar-brand{
+        margin-left:20px;
+        padding-left:0px;
+    }
+
     .product-slider img{
         max-height:400px;
     }
@@ -592,6 +597,12 @@ h5.message_label{
 
 
 @media (max-width: 768px) {
+    .navbar-brand{
+        margin-bottom:10px;
+        padding-left:10px;
+    }
+
+
     #timberNavbar{
         top:100%;
     }
@@ -626,6 +637,11 @@ h5.message_label{
 
 
 @media (max-width: 480px) {
+    .navbar-brand{
+        margin-top:10px;
+        margin-left:30px;
+    }
+
     .navbar-form.mobile{
         display:block!important;
         border-radius:0;
