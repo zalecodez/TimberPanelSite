@@ -18,6 +18,14 @@ function formSubmit(){
 
 $(document).ready(function(){
 
+    $("#leadinCarousel").swipeleft(function(){
+        $(this).carousel("prev");
+
+    });
+
+    $("#leadinCarousel").swiperight(function(){
+        $(this).carousel("next");
+    });
     
     $("#timberNavbar").on('shown.bs.collapse', function(){
         var navLength = $(document).height()-110;
