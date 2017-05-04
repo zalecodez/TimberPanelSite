@@ -17,16 +17,6 @@ function formSubmit(){
 }
 
 $(document).ready(function(){
-
-    $("#leadinCarousel").swipeleft(function(){
-        $(this).carousel("prev");
-
-    });
-
-    $("#leadinCarousel").swiperight(function(){
-        $(this).carousel("next");
-    });
-    
     $("#timberNavbar").on('shown.bs.collapse', function(){
         var navLength = $(document).height()-110;
         $(this).height(navLength);
@@ -37,8 +27,20 @@ $(document).ready(function(){
     
     if($("#timberCarousel").length)
         $("#timberCarousel").carousel({interval: 4000});
-    if($("#leadinCarousel").length)
+
+    if($("#leadinCarousel").length){
         $("#leadinCarousel").carousel({interval: false});
+
+        $("#leadinCarousel").swipeleft(function(){
+            $(this).carousel("prev");
+
+        });
+
+        $("#leadinCarousel").swiperight(function(){
+            $(this).carousel("next");
+        });
+    }
+        
 
     if($(".productCarousel").length)
         $(".productCarousel").carousel({interval: false});
