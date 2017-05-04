@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<!--  This site was created in Webflow. http://www.webflow.com -->
+<!--  Last Published: Fri Apr 28 2017 03:08:30 GMT+0000 (UTC)  -->
+<!--  This site was modified to use the Bootstrap 3 UI framework instead of Webflow -->
+<!--  Bootstrap modifications by Zale Young - https://www.linkedin.com/in/zale-young-aa06667a -->
+<html data-wf-page="58e7f2cc6a42e80858a9097d" data-wf-site="58e4fb17e91a198c1c53a2b9">
+<head>
+  <meta charset="utf-8">
+  <title>Contact</title>
+  <meta content="Timber Panel Products is a Timber Wholesaler" name="description">
+  <meta content="Contact" property="og:title">
+  <meta content="Timber Panel Products is a Timber Wholesaler" property="og:description">
+  <meta content="summary" name="twitter:card">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta content="Webflow" name="generator">
+
+  <script src="jquery/jquery-3.1.1.min.js" type="text/javascript"></script>
+  <script src="js/bootstrap.js" type="text/javascript"></script>
+  <script src="js/timber.js" type="text/javascript"></script>
+
+  <link href="css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/timber-panel-products.webflow.css" rel="stylesheet" type="text/css">
+  <link href="css/timber.css" rel="stylesheet" type="text/css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
+ <script type="text/javascript">
+    WebFont.load({
+      google: {
+        families: ["Montserrat:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"]
+      }
+    });
+  </script>
+  <script src="js/modernizr.js" type="text/javascript"></script>
+  <link href="images/TPP_light_32.png" rel="shortcut icon" type="image/x-icon">
+  <link href="images/TPP_light_256.png" rel="apple-touch-icon">
+</head>
+<body class="body">
+    
+    <nav class="navbar navbar-toggleable-md navbar-inverse" role="navigation" >
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="menu-button navbar-toggle" 
+                    data-toggle="collapse" data-target="#timberNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <a class="navbar-brand" href="index.html">
+                <img src="images/TPP_white-green512.png" width="256">
+            </a>
+            <div class="collapse navbar-collapse" id="timberNavbar">
+                <ul class="nav navbar-nav " role="navigation">
+                    <li> <a href="index.html" class="active">Home</a></li>
+                    <li> <a href="#">Specials</a></li>
+                    <li> <a href="products.html">Products</a></li>
+                    <li> <a href="#">About Us</a></li>
+                    <li> <a href="#">Careers</a></li>
+                    <li> <a href="contact.html">Contact</a></li>
+                    <li>
+                        <div class="formwrapper">
+                            <form class="mobile form-wrapper navbar-form">
+                                <input class="form-control text-field" placeholder="Search..." maxlength="256" type="text"/>
+                            </form>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="formwrapper big">
+            <form class="form-wrapper navbar-form">
+                <input class="form-control text-field" placeholder="Search..." maxlength="256" type="text"/>
+            </form>
+        </div>
+    </nav>
+
+
+    <div class="border section ">
+        <div class="intro_richtext">
+            <h1>Contact Us</h1>
+            <p>Would you like to be a supplier? Got a question? Send us an email with your question and we’ll &nbsp;get back to you in 24 hours.</p>
+        </div>
+        <div class="container">
+            <div class="row contact-us">
+                <div class="col-sm-5">
+                    <div class="contact_form">
+                        <form id="email-form-2">
+                            <h5 class="message_label">SEND US A MESSAGE</h5>
+                            <input class="contact_text form-control" id="name" maxlength="256" name="name" placeholder="Enter your name" type="text">
+                            <input class="contact_text form-control" id="email" maxlength="256" name="email" placeholder="Enter your email address">
+                            <input class="contact_text form-control" id="Phone" maxlength="256" name="Phone" placeholder="Enter your phone number">
+                            <textarea class="contact_text textarea form-control" id="Text-Area" maxlength="5000" name="Text-Area" placeholder="Write your message here..."></textarea>
+                            <input class="button_readmore message"type="submit" value="SEND">
+                        </form>
+                        <div class="form-done">
+                            <div>Thank you! Your submission has been received!</div>
+                        </div>
+                        <div class="form-fail">
+                            <div>Oops! Something went wrong while submitting the form</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-7">
+                    <h5 class="message_label mobile">Visit Us</h5>
+                    <div class="row">
+                        <div class="column contact col-sm-4">
+                            <div class="intro_richtext">
+                                <h5>OFFICE HQ</h5>
+                                <p>21 Southfork Drive</p>
+                                <p>Kilsyth VIC 3137</p>
+                            </div>
+                        </div>
+                        <div class="column contact col-sm-4">
+                            <div class="intro_richtext">
+                                <h5>Phone:</h5>
+                                <p>(03) 9761 5966</p>
+                                <p>Fax: (03) 9761 4533</p>
+                            </div>
+                        </div>
+                        <div class="column contact col-sm-4">
+                            <div class="intro_richtext">
+                                <h5>HOURS OF OPERATION</h5>
+                                <p>Monday - Friday: 8:00am- 5:00pm</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="contactMap"></div>
+                </div>
+            </div>
+        </div>
+    </div>    
+
+
+    <div class="footer section">
+        <div class="row">
+            <div class="col-sm-4"><img height="50" src="images/TPP_white-green512.png">
+                <p class="footertext">Copyright 2017 Ticby Pty. Ltd. All Rights Reserved.</p>
+            </div>
+            <div class="col-sm-4">
+                <h4 class="footer_heading">Product Finder:</h4>
+                <ul class="unordered-list">
+                    <li class="list-item"><a href="#" class="navlink">PARTICLEBOARD</a>
+                    </li>
+                    <li class="list-item"><a href="#" class="navlink">FORMPLY</a>
+                    </li>
+                    <li class="navlink">MASONITE</li>
+                    <li class="list-item"><a href="#" class="navlink">MDF</a>
+                    </li>
+                    <li class="list-item"><a href="#" class="navlink">MELAMINE</a>
+                    </li>
+                    <li class="list-item"><a href="#" class="navlink">PLYWOOD</a>
+                    </li>
+                    <li class="list-item"><a href="#" class="navlink">STRUCTUAL PLYWOOD</a>
+                    </li>
+                    <li class="list-item"><a href="#" class="navlink">NON STRUCTUAL PLYWOOD</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm-4">
+                <h4 class="footer_heading">Connect with us</h4>
+                <div class="socialmedia_flexbox">
+                    <a class="facebook socialmedia"></a>
+                    <a class="socialmedia twitter"></a>
+                    <a class="google socialmedia"></a>
+                    <a class="pinterest socialmedia"></a>
+                    <a class="instagram socialmedia"></a>
+                </div>
+                <div class="footer-contact row">
+                    <div class="col-sm-6">
+                        <h4 class="footer_heading">Contact us:</h4>
+                        <p>Timber Panel Products
+                            <br/>Phone: <a href="tel:(03)97615966" class="navlink">(03) 9761 5966</a>
+                        </p>
+                    </div>
+                    <div class="col-sm-6">
+                        <h4 class="footer_heading">Visit us:</h4>
+                        <p>21 Southfork Drive
+                            <br/>Kilsyth VIC 3137
+                            <a href="tel:(03)97615966" class="navlink"></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBks0W0NawnPju70JQS5XXPOTTrguDQjWE&callback=contactMap"></script>
+<!--USING WEBFLOW'S API KEY FOR GOOGLE MAP-->
+
+  <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js" type="text/javascript"></script>-->
+  <!--<script src="js/webflow.js" type="text/javascript"></script>-->
+  <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
+</body>
+</html>
