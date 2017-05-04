@@ -42,6 +42,9 @@ img{
     padding:18px;
     border:0;
 }
+.menu-button:focus, .menu-button:hover{
+    background-color:transparent!important;
+}
 #Welcome{
     margin:0!important;
     width:100%!important;
