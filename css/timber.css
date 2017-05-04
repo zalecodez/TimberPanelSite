@@ -297,6 +297,8 @@ img{
 .row{
     padding:0;
     border:0;
+    margin-left:0;
+    margin-right:0;
 }
 
 .feature-products_container{
@@ -652,4 +654,3 @@ h5.message_label{
     }
 
 }
-
