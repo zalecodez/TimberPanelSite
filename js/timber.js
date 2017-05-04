@@ -31,13 +31,12 @@ $(document).ready(function(){
     if($("#leadinCarousel").length){
         $("#leadinCarousel").carousel({interval: false});
 
-        $("#leadinCarousel").swipeleft(function(){
-            $(this).carousel("prev");
-
-        });
-
-        $("#leadinCarousel").swiperight(function(){
-            $(this).carousel("next");
+        $("#leadinCarousel").swipe({
+            swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
+                if (direction == 'left') $(this).carousel('next');
+                if (direction == 'right') $(this).carousel('prev');
+            },
+            allowPageScroll:"vertical"
         });
     }
         
