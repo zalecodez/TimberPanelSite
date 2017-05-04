@@ -1,6 +1,9 @@
 .section{
     font-size:100%;
 }
+#leadinCarousel .lead-in_content{
+        font-size:96%;
+    }
 img{
     object-fit:cover;
 }

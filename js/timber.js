@@ -24,19 +24,19 @@ $(document).ready(function(){
         $("#timberNavbar.collapsing").css("cssText","height: "+navLength+"px!important;");
     });
 
+    $(".carousel").swipeleft(function() {
+        $(this).carousel('next');
+    });
+    $(".carousel").swiperight(function() {
+        $(this).carousel('prev');
+    });
+
     
     if($("#timberCarousel").length)
         $("#timberCarousel").carousel({interval: 4000});
 
     if($("#leadinCarousel").length){
         $("#leadinCarousel").carousel({interval: false});
-
-        $("#leadinCarousel").swipeleft(function() {
-            $(this).carousel('next');
-        });
-        $("#leadinCarousel").swiperight(function() {
-            $(this).carousel('prev');
-        });
     }
         
 
