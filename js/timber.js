@@ -17,36 +17,6 @@ function handleTouchStart(evt) {
     yDown = evt.originalEvent.touches[0].clientY;                                      
 };                                                
 
-function handleTouchMove(evt) {
-    if ( ! xDown || ! yDown ) {
-        return;
-    }
-
-    var xUp = evt.originalEvent.touches[0].clientX;                                    
-    var yUp = evt.originalEvent.touches[0].clientY;
-
-    var xDiff = xDown - xUp;
-    var yDiff = yDown - yUp;
-
-    if ( Math.abs( xDiff ) > Math.abs( yDiff ) ) {/*most significant*/
-        if ( xDiff > 0 ) {
-            /* left swipe */ 
-        } else {
-            /* right swipe */
-        }                       
-    } else {
-        if ( yDiff > 0 ) {
-            /* up swipe */ 
-        } else { 
-            /* down swipe */
-        }                                                                 
-    }
-    /* reset values */
-    xDown = null;
-    yDown = null;                                             
-};
-
-
 
 function search(){
 }
