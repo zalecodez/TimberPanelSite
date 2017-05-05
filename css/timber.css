@@ -170,16 +170,20 @@ img{
 }
 
 
+#timberCarousel,
+#timberCarousel .carousel-inner,
+#timberCarousel .carousel-inner img{
+    height:70vh;
+}
+
 #timberCarousel{
     padding:0;
-    height:110vh;
     width:auto;
 }
 
 #timberCarousel .carousel-inner,
 #timberCarousel .carousel-inner img
 {
-    height: 110vh;
     width:100%;
 }
 #timberCarousel img{
@@ -193,7 +197,7 @@ img{
 
 
 .carousel-caption{
-    margin-bottom:150px;
+    margin-bottom:100px;
 }
 
 .button_readmore {
@@ -243,7 +247,7 @@ img{
   position: absolute;
   left: 0px;
   right: 0px;
-  bottom: 10%;
+  bottom: 15%;
   z-index: 0;
   display: block;
   width: 50px;
@@ -315,6 +319,7 @@ img{
 .unordered-list{
     list-style:none;
     padding-left:0;
+    width:100%;
 }
 
 .tab-pane .unordered-list{
