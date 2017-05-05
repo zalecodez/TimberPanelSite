@@ -25,6 +25,21 @@ function formSubmit(){
 }
 
 $(document).ready(function(){
+    $("a").on('click',function(event){
+        if(this.hash != ""){
+            event.preventDefault();
+
+            var hash = this.hash;
+
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+            }, 800, function(){
+                window.location.hash = hash;
+            });
+        }
+    });
+
+
     $("#timberNavbar").on('shown.bs.collapse', function(){
         var navLength = $(document).height()-110;
         $(this).height(navLength);

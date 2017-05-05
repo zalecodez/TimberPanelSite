@@ -197,12 +197,13 @@ img{
 
 
 .carousel-caption{
-    margin-bottom:100px;
+    margin-bottom:10px;
 }
 
 .button_readmore {
     display: inline-block;
     padding: 9px 15px;
+    margin-bottom:90px;
     border: 0;
     line-height: inherit;
     text-decoration: none;
