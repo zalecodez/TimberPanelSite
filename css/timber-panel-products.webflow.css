@@ -20,7 +20,7 @@ h4 {
   display: inline-block;
   margin-top: 10px;
   margin-bottom: 10px;
-  font-size: 18px;
+  font-size: 15.5px;
   line-height: 24px;
   font-weight: 700;
 }
@@ -293,6 +293,7 @@ strong {
   color: #000;
   font-weight: 400;
   text-transform: uppercase;
+  text-shadow:none;
 }
 
 .button_readmore.message {

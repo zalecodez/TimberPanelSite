@@ -125,7 +125,7 @@ img{
 }
 
 .nav > li > a.active {
-    color: #0082f3!important;
+    color: #9fc200 !important;
 }
 
 .nav li{
@@ -139,10 +139,13 @@ img{
     border:0;
 }
 
-.text-field{
+.text-field, .text-field:focus{
     border-radius:0;
     max-width:150px;
     margin-bottom:10px;
+    
+  border-color: #9fc200;
+  box-shadow:none;
 }
 
 .navbar-form.mobile{
@@ -306,6 +309,7 @@ img{
 
 .feature-products_container{
     padding:0;
+    width:71%!important;
 }
 
 .unordered-list{
@@ -477,7 +481,7 @@ h5.message_label{
 }
 
 #contactMap{
-    height:400px;
+    height:320px;
 }
 
 @media (max-width: 991px) {
