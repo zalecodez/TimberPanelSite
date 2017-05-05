@@ -314,7 +314,7 @@ img{
 
 .feature-products_container{
     padding:0;
-    width:68%!important;
+    max-width:880px;
 }
 
 .unordered-list{
@@ -339,6 +339,9 @@ img{
     max-width:100%;
 }
 
+.footer-contact{
+    border-top: 3px solid #9fc200;
+}
 
 .tabmenu:before,
 .tabmenu:after {
